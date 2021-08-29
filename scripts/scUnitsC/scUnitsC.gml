@@ -1,0 +1,136 @@
+function Draw_Units (unit_array) {
+	for (var i = 0; i < array_length(unit_array); i++) {
+		var unit_selected = unit_array[i];
+		with (unit_selected) {
+			draw	= TilePosToScreen(tile.grid_x, tile.grid_y);
+			draw_x	= draw[0]; 
+			draw_y	= draw[1]; 
+			draw_sprite(sprite, 0, draw_x, draw_y);
+		}
+	}
+}
+
+
+function Display_Stats_Seeker(unit_targeted) {
+	
+	draw_set_halign(fa_left);
+	var shift_y			= font_get_size(fDefault) * 3;
+	var show_stats_x	= 32;
+	var show_stats_y	= 0;
+	var i				= 0;
+
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "name : "						+ string(unit_targeted.name 				));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "class : "					+ string(unit_targeted.class 				));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "triumvirat : "				+ string(unit_targeted.triumvirat 			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "confidence : "				+ string(unit_targeted.confidence 			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "presence : "					+ string(unit_targeted.presence				));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "shield : "					+ string(unit_targeted.shield				));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "aura : "						+ string(unit_targeted.aura					));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "unspeakable : "				+ string(unit_targeted.unspeakable 			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "starting_inspiration : "		+ string(unit_targeted.starting_inspiration	));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "inspiration_max : "			+ string(unit_targeted.inspiration_max 		));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "hope : "						+ string(unit_targeted.hope 				));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "inspiration_generation : "	+ string(unit_targeted.hope_generation 		));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "default_passive : "			+ string(unit_targeted.default_passive 		));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "passive1 : "					+ string(unit_targeted.passive1 			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "passive2 : "					+ string(unit_targeted.passive2 			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "default_weapon : "			+ string(unit_targeted.weapon.name 			));
+										 			  
+										 			  
+if (unit_targeted.tile != undefined) {	 			  
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "tile.grid_x: "				+ string(unit_targeted.tile.grid_x			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "tile.grid_y: "				+ string(unit_targeted.tile.grid_y			));
+}										 			  
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "sprite : "					+ string(unit_targeted.sprite				));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "image_index : "				+ string(unit_targeted.image_index			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "side : "						+ string(unit_targeted.side					));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "action_count : "				+ string(unit_targeted.action_count			));
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, "attack_count : "				+ string(unit_targeted.attack_count			));
+	
+}
+	
+
+function Display_Stats_Weapon(unit_targeted) {
+	
+	var weapon = unit_targeted.weapon;
+
+	
+	var shift_y			= font_get_size(fDefault) * 3;
+	var show_stats_x	= display_get_gui_width() - 32;
+	var show_stats_y	= 0;
+	draw_set_halign(fa_right);
+	
+	var i = 0;
+	
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.name 				) + " : name");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.description_eng 	) + " : description_eng");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.damage 				) + " : damage");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.attribut 			) + " : attribut");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.range				) + " : range");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.range_restriction	) +	" : range_restriction");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.passive_1 			) + " : passive_1");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.passive_2			) + " : passive_2");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.zone 				) + " : zone");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.context 			) + " : context");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.price_in_hope 		) + " : price_in_hope");
+																							  		
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.sprite		) + " : sprite");
+	draw_text(show_stats_x, show_stats_y + shift_y * i++, string(weapon.image_index			) + " : image_index");
+}
+	
+	
+function Display_Stats_Key(unit_targeted) {
+	
+	var unit_targeted_variables = variable_struct_get_names(unit_targeted);
+	
+	var shift_y			= font_get_size(fDefault) * 3;
+	var show_stats_x	= 32;
+	var show_stats_y	= display_get_gui_height();
+	
+	var i = array_length(unit_targeted_variables);
+	
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "health : "	+ string(unit_targeted.health	));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "sprite : "	+ string(unit_targeted.sprite	));
+if (unit_targeted.tile != undefined) {
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "tile.grid_x: "				+ string(unit_targeted.tile.grid_x			));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "tile.grid_y: "				+ string(unit_targeted.tile.grid_y			));
+}
+}
+
+
+function Display_Stats_Eny(unit_targeted) {
+	
+	var unit_targeted_variables = variable_struct_get_names(unit_targeted);
+	
+	var shift_y			= font_get_size(fDefault) * 3;
+	var show_stats_x	= 32;
+	var show_stats_y	= display_get_gui_height();
+	
+	var i = array_length(unit_targeted_variables);
+	
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "name : "					+ string(unit_targeted.name			));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "description_fr : "		+ string(unit_targeted.description_fr	));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "description_eng : "		+ string(unit_targeted.description_eng	));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "type : "					+ string(unit_targeted.type			));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "health : "				+ string(unit_targeted.health			));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "attack_damage : "					+ string(unit_targeted.attack_damage	));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "attack_range : "			+ string(unit_targeted.attack_range	));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "active : "				+ string(unit_targeted.active			));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "passive_1 : "			+ string(unit_targeted.passive_1		));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "passive_2 : "					+ string(unit_targeted.passive_2		));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "default_behavior : "		+ string(unit_targeted.default_behavior));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "zone : "					+ string(unit_targeted.zone			));
+	
+if (unit_targeted.tile != undefined) {
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "tile.grid_x: "				+ string(unit_targeted.tile.grid_x	));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "tile.grid_y: "				+ string(unit_targeted.tile.grid_y	));
+}
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "sprite : "				+ string(unit_targeted.sprite			));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "image_index : "			+ string(unit_targeted.image_index		));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "side : "					+ string(unit_targeted.side				));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "action_count : "			+ string(unit_targeted.action_count		));
+	draw_text(show_stats_x, show_stats_y - shift_y * i--, "attack_count : "			+ string(unit_targeted.attack_count		));
+
+}
+	
+	

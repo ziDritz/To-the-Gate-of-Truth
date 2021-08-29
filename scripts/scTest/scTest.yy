@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Test",
+    "path": "folders/Test.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scFightMenu",
+  "name": "scTest",
   "tags": [],
   "resourceType": "GMScript",
 }
