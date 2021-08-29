@@ -1,0 +1,1 @@
+MAIN.s_m.change("Fight");

@@ -1,0 +1,42 @@
+Name$Description (Français)$Description (English)$When$Actor Condition$Range / Range Restriction$What$Amount$on Who/What ?$Zone$Context$Code$illustration$Has changed ?
+Shield Close Generation (1)$En début de round, si vous êtes en portée Proche, vous gagnez 1 point de bouclier.$At the begining of the round, if you are in Close range, you gain 1 shield point.$round begin$$Close$Shield (X)$1$owner$$$P_PA_04$$
+Push passive (1)$Lorsque vous réussissez une attaque la cible est pousseé de 1.$Whenever you attack someone, you push him 1 tile away.$attack succeeded$owner$$Push$1$an element$$$P_PA_05$$
+Ignore Collision passive$Vous ne prenez pas de dégâts de collision.$You do not take any collision damage.$take collision damage$owner$$Ignore Collision$$owner$$$P_PA_06$$
+Final blow Hope Generation (3)$Si vous achèvez un ennemi, vous gagnez 3 points d'Espoir.$Whenever you deal the final blow, you heal 1 Confidence.$kill unit$owner$$Hope Generation (X)$3$owner$$$P_PA_07$$
+Final blow reset$$If you deal the final blow with a weapon, you regain 1 PA and can attack again for this ROUND. $$owner$$Pa boost$$$$$P_PA_08$$x
+PA by damage$$Each time you take damage, you gain an additional 1 PA for the next ROUND. $$owner$$Pa boost$$$$$P_PA_09$$
+Boost Hope passive (1)$Lorsque vous attaquez, vos dégâts peuvent être augmentés de 1 pour chaque point d'Espoir dépensé en échange.$When you attack, your damage is up by 1 if you trade one Hope in exchange.$attack$$F/N$Boost of Hope (X)$$caster$A (ress & buff)$Boons$A_PA_01$x$
+Magician / Caster passive$Lorsque vous utilisez un pouvoir, le coût en INSPIRATION est de moitié (arrondi supérieur).$Using a power only cost you half of the ressource needed (rounded up).$use power$$F/N$Magician / Caster$$caster$A (ress & buff)$Boons$A_PA_02$x$
+Clean$Tout effet dirigé sur vous est annulé. Cela inclut les effets bénéfiques et négatifs mais exclut les dommages et les soins.$All effects towards you are denied. That includes benificial and detrimental effects but excludes damage taken and heal.$$$Far$Clean$$caster$A (ress & buff)$Boons$A_PA_03$x$
+Inspiration boost passive (1)$Vous gagnez 1 d'Inspiration additionnel si vous en génèrez.$When generating Inspiration, gain 1 more.$when generating inspiration$$F/N$Inspiration boost (X)$$caster$A (ress & buff)$Elite $A_PA_E_01$x$
+Damage boost passive (1)$Chaque dégât que vous infligez est augmenté de 1.$Each damage you deal is up by 1.$attacking$$F/N$Damage boost (X)$$caster$A (ress & buff)$Elite $A_PA_E_02$x$
+Selective Clean passive$Tout effet dirigé sur vous est annulé. Cela inclut les effets bénéfiques et négatifs mais exclut les dommages et les soins.$All NEGATIVE effects towards you are denied. That excludes damage taken.$receiving negative effects$$Far$Clean$$caster$A (ress & buff)$Boss$A_PA_E_03$x$
+Additional PA$$You always have an additional PA during your turn. $making an action$$F/N$Pa boost$$caster$A (ress & buff)$Elite $A_PA_E_04$$x
+Final blow all reset$$If you deal the final blow with a weapon, all Seekers regain 1 PA and can attack again for this ROUND. $$$$Pa boost$$$$$A_PA_E_05$$x
+Lock position passive (1)$Lorsque vous infligez des dégats, vous bloquez la position de l’ennemie pour 1 ROUND. $Whenever you deal damage, you lock the position of the ennemy for 1 round$$$$Lock position (X)$$$B (Tiles & stun)$Boons$B_PA_01$x$
+Stability passive$Vous êtes toujours stable, vous ne pouvez pas être déplacé de force. $You're always stable, you can't be moved by force or effects.$$$$Stability (X)$$$B (Tiles & stun)$Boons$B_PA_02$x$
+Anchor passive$Vous ne pouvez réaliser aucun déplacement, de force comme voulu. $You're always anchored, there is NO way for you to move when you have this passive except when an element interchange position with you. $$$$$$$B (Tiles & stun)$Boons$B_PA_03$x$
+Stun passive (1)$Lorsque vous infligez des dégâts, l’ennemi est stun pour 1 round. Il ne peut plus faire d’action, même en conséquence à un jet de dé.$Whenever you deal damage, you stun the ennemy for 1 round. They can't make any action, even as a consequence of a dice.$$$$Stunning (X)$$$B (Tiles & stun)$Elite $B_PA_E_01$x$
+Stunning gaze passive (1)$Lorsque vous subissez des dégâts, l’ennemi est stun pour 1 round après son attaque. Il ne peut plus faire d’action, même en conséquence à un jet de dé.$Whenever you take a damage from an ennemy, they are stun after their attack for 1 turn. They can't make any action, even as a consequence of a dice. $$$$Stunning (X)$$$B (Tiles & stun)$Elite $B_PA_E_02$x$
+Automatic recovery$Annulez automatiquement toute destruction de case sur la section alliée.$If a tile grid on the ally side should be destroyed, you automatically deny this effect$$$$Restore (X)$$$B (Tiles & stun)$Elite $B_PA_E_03$x$
+Selective mirror passive$$Any effect on your range is also inflicted on the same ennemy range. Only detrimental effects. $$$$Mirror (X)$$$B (Tiles & stun)$Elite $B_PA_E_04$x$
+Range attack$$Whenever you attack a range, the damage is inflicted to all elements in this range.$$$$$$$C (Leap & piercing)$Marchent & Boons$C_PA_01$x$
+Extended range $$Your attacks and powers have their range extended to max.$$$F/C$$$$C (Leap & piercing)$Marchent & Boons$C_PA_02$x$
+What's a Shield ?$$Whenever you deal damage, you ignore the shield$$$$$$$C (Leap & piercing)$Marchent & Boons$C_PA_03$x$
+Critical hit$$Passive : when using a weapon, if you make a 6 your damage are up by 1. $$$$Critical hit$$$C (Leap & piercing)$Marchent & Boons$C_PA_04$$sat
+Yi$$All your damages are reduced by 1. When you deal damage, you touch all enemies.$$$F/C$$$$C (Leap & piercing)$Elite $C_PA_E_01$x$
+AOE passive$$Whenever you deal damage, it is inflicted to all elements in enemies grid.$$$F/N$$$$C (Leap & piercing)$Elite $C_PA_E_02$x$
+Leap passive$$"Whenever you deal damage, you choose the tile grid you attack. It can't be blocked by an element ""in front of""."$prepare to attack$owner$Far$Leap$$oActionsC$C (Leap & piercing)$Elite $C_PA_E_03$x$
+Poison touch passive$$Whenever you deal damage, the target takes 1 damage at the end of the ROUND.$$$$$$$D (Heal & poison)$Marchent & Boons$D_PA_01$x$
+Shared heal$$Whenever you heal yourself (with power or refillable potion), you choose another ally who will benefit from the same effect.$$$$$$$D (Heal & poison)$Marchent & Boons$D_PA_02$x$
+Consideration action$$"You now have a new action that cost 1 action point and can only be done once per FIGHT. 
+(effect) : choose a Key of sense, it regains 1 health"$$$$$$$D (Heal & poison)$Marchent & Boons$D_PA_03$x$
+Reassurance$$Whenever you deal the final blow, you heal 1 Confidence.$$$$$$$D (Heal & poison)$Elite $D_PA_E_01$x$
+Poison all passive$$If you have not moved during your turn, all enemies lose 1 damage at the end of the ROUND.$$$$$$$D (Heal & poison)$Elite $D_PA_E_02$x$
+Self poisoned$$"At the end of each ROUND, you lose 1 Confidence. 
+All you damage is up by 1. If you deal the final blow, you gain 2 Confidence. "$$$$$$$D (Heal & poison)$Elite $D_PA_E_03$x$
+Self reflection$$When you take damage, you heal all adjacent elements by 1 health/Confidence.$$$$$$$D (Heal & poison)$$$x$
+Action throw$$"You now have a new action that cost 1 action point and can only be done once per ROUND. 
+(effect) : choose an element adjacent to you. You can carry it then throw it in +2 in any direction (collision damage possible). "$$$$Carry & throw$$$G (Mobi & grab)$$G_PA_01$$
+$$$$$$$$$$$$$
+$$$$$$$$$$$$$

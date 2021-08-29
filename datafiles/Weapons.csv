@@ -1,0 +1,111 @@
+Name$Description (eng)$Attack Damage$Attribut$Range$Range Restriction$Passive 1$Passive 2$Zone$Context$Code$Has changed ?
+Gloves$"Attribute: Presence
+Restriction: -
+Range: +2
+Passive: When touch an element, pushes it
+Damage: 1"$1$Presence$2$$Push passive (1)$$$Default$P_A_01$
+Canon$"Attribute: Aura
+Restriction: !C
+Range: N/C
+Passive: leap : you deal damage directly to your target, even if there are elements ""in front of"" 
+Damage: 1"$1$Aura$N/C$!C$Leap passive$$$Default$P_A_02$
+Bow$"Attribute: Unspeakbale
+Restriction: !C
+Range: max
+Passive: -
+Damage: 2"$2$Unspeakable$Max$!C$$$$Default$P_A_03$
+Illuminated sword$"Attribute: Presence
+Restriction: -
+Range: +2
+Passive: For each 5 Hope you have, you gain an aditionnal one damage.
+Damage: 1"$1$Presence$2$$$$A (ress & buff)$$A_A_01$
+Assassin spear$"Attribute: Aura
+Restriction: !C
+Range: N/C
+Passive: If you've dealt the final blow on an enemy, you can't be dealt any damage for the ROUND
+Damage: 2"$2$Aura$N/C$!C$$$A (ress & buff)$$A_A_02$
+Inspiration bow$"Attribute: Unspeakbale
+Restriction: !C
+Range: max
+Passive:  For each 5 Inspiration your character have, you gain an additional one damage
+Damage: 1"$2$Unspeakable$Max$!C$$$A (ress & buff)$$A_A_03$
+Legendary canon$"Attribute: Weakest attribute
+Restriction: !C
+Range: max
+Passives: leap : you deal damage directly to your target, even if there are elements ""in front of"".
+For each 5 Inspiration your character have, you gain an additional one damage
+Damage: 2"$2$$Max$$$$A (ress & buff)$$A_A_E_01$
+Intimidating glove$"Attribute: Presence
+Restriction: -
+Range: +2
+Passive: The element touched by the attack can't make any movement for the ROUND.
+Damage: 1"$$Presence$2$$$$B (Tiles & stun)$$B_A_01$
+Stunning canon$"Attribute: Aura
+Restriction: !C
+Range: N/C
+Passive: If you've dealt the final blow on an enemy, you can choose an enemy. It can't make any action for the ROUND.
+Damage: 2"$$Aura$N/C$!C$$$B (Tiles & stun)$$B_A_02$
+Impactful bow$"Attribute: Unspeakbale
+Restriction: !C
+Range: max
+Passive:  If you've dealt the final blow, the tile where the enemy was is now destroyed (no element can be on it).
+Damage: 1"$$Unspeakable$Max$!C$$$B (Tiles & stun)$$B_A_03$
+Legendary sword$"Attribute: Weakest attribute
+Restriction: C/N
+Range: +3
+Passive : For each destroyed tile on both grids, you gain an additional one damage
+When you deal the final blow on an enemy, destroy a tile grid of your choice.
+Damage: 2"$$$3$C/N$$$B (Tiles & stun)$$B_A_E_01$
+Long sword$"Attribute: Presence
+Restriction: C
+Range: - 
+Passive: You touch 1 element by range until the maximum range on a row.
+Damage: 1"$$$Max$C$$$C (Leap & piercing)$$C_A_01$
+Piercing canon$"Attribute: Aura
+Restriction: !C
+Range: N/C
+Passives: You ignore shields.
+leap : you deal damage directly to your target, even if there are elements ""in front of""
+Damage: 2"$$$N/C$!C$$$C (Leap & piercing)$$C_A_02$
+Accurate bow$"Attribute: Unspeakbale
+Restriction: !C
+Range: max
+Passive: you can target anywhere you want (indenpendantly of the range or the row of the element you target)
+Damage: 1"$$$Max$!C$$$C (Leap & piercing)$$C_A_03$
+Legendary bow$"Attribute: Weakest attribute
+Restriction: F
+Range: max
+Passive : you deal damage to all elements on the enemies's grid
+Damage: 1"$$$max$F$$$C (Leap & piercing)$$C_A_E_01$
+Masochist sword$"Attribute: Presence
+Restriction: -
+Range: 3
+Passive: You deal an additional 1 damage per missing Confidence.
+Damage: 1"$$$3$$$$C (Leap & piercing)$$C_A_E_02$
+Poison sword$"Attribute: Presence
+Restriction: C
+Range: - 
+Passive: Each time you touch, you apply Poison (1) to the target (take 1 damage at the end of the ROUND).
+Damage: 1"$$$3$C$$$C (Leap & piercing)$$D_A_01$
+Healing canon$"Attribute: Aura
+Restriction: !C
+Range: N/C
+Passives: You heal 1 Confidence if you have dealt the final blow. 
+leap : you deal damage directly to your target, even if there are elements ""in front of""
+Damage: 2"$$$N/C$!C$$$C (Leap & piercing)$$D_A_02$
+Corrupting bow$"Attribute: Unspeakbale
+Restriction: !C
+Range: max
+Passive: if you've dealt the final blow, inflict Poison(2) to another enemy in the same range.
+Damage: 1"$$$Max$!C$$$C (Leap & piercing)$$D_A_03$
+Poisoning canon $"Attribute: Weakest attribute
+Restriction: F/N
+Range: max
+Passive : you deal Poison (1) to all enemies. 
+Leap : you deal damage directly to your target, even if there are elements ""in front of""
+Damage: 0"$$$max$F/N$$$C (Leap & piercing)$$D_A_E_01$
+Shielding glove$"Attribute: Presence
+Restriction: -
+Range: 3
+Passive: When dealing damage to an element, you gain one shield and give 1 shield to all elements on adjacent tiles.
+Damage: 1"$$$3$C$$$E (Shield & debuff)$$E_A_01$

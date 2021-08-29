@@ -1,0 +1,182 @@
+﻿Name$Description (fr)$Description (eng)$Type$Health$Attack Damage$Attack Range$Active$Passive 1$Passive 2$Default Behavior$Zone$Code$Illustration$Has changed ?$
+Doubt A$$Attack on +2 and deals 1 damage$Doubt$4$1$2$$$$P$A (ress & buff)$A_E_01$$$
+Nonsense A$$"Attack on +3 and deals 1 damage
+(passive) leap : you deal damage directly to your target, even if there are elements ""in front of"" "$Nonsense$4$1$3$$Leap passive$$K$A (ress & buff)$A_E_02$$$dritz
+Incoherence A$$"Attack on C/N and deals 1 damage
+
+(active) All negative effects towards you are denied for the ROUND. That excludes damage taken."$Incoherence$5$1$N/C$Name$$$K$A (ress & buff)$A_E_03$$$
+Mystery A$$"Attack on + 3 and deals 2 damage
+
+(active) All negative effects towards you are denied for the round. That excludes damage taken.
+
+(passive) For the next ROUND after changing strategy, you can't be dealt any damage. Excludes any mouvement by force.
+You can't change strategy on 2 ROUND in a row."$Mystery$6$2$3$$$$P$A (ress & buff)$A_E_04$$$
+Paradox (elite) A$$"Attack on range max and deals 2.
+
+Elite: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active) Chose a PC. For the ROUND, their powers cost double Inspiration (rounded down). Only one PC can have this alteration at a time.
+
+(passive) If on defensive strategy, all negative effects towards you are denied. That excludes damage taken.
+
+(passive)For the next ROUND after changing strategy, you can't be dealt any damage. Excludes any mouvement by force.
+You can't change strategy on 2 ROUND in a row."$Paradox$7$2$Max$$$$P$A (ress & buff)$A_E_05$$$
+Boss A$$"Attack on range max and deals 2.
+
+Boss: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active) Chose a PC. For the FIGHT, their powers cost double Inspiration (rounded down). Only one PC can have this alteration at a time.
+
+(passive) All negative effects towards you are denied. That excludes damage taken.
+
+(passive)For the next ROUND after changing strategy, you can't be dealt any damage. Excludes any mouvement by force.
+You can't change strategy on 2 ROUND in a row."$Boss$8$2$Max$$$$D$A (ress & buff)$A_E_06$$$
+Doubt B$$"Attack on +2 and deals 1 damage
+"$Doubt$4$$$$$$P$B (Tiles & stun)$B_E_01$$$
+Nonsense B$$"Attack on +3 and deals 1 damage
+
+leap : you deal damage directly to your target, even if there are elements ""in front of""
+
+(active) Deny any change in range for 1  ROUND for 1 PC (mouvement vertical still possible)"$Nonsense$4$$$$$$K$B (Tiles & stun)$B_E_02$$$
+Incoherence B$$"Attack on N/F and deals 2 damage
+
+(active) Stun a PC for 1 ROUND. Doesn't count as an attack.
+
+(passive) If you change into a defensive strategy, the next ROUND PC can't move at all."$Incoherence$5$$$$$$P$B (Tiles & stun)$B_E_03$$$
+Mystery B$$"Attack on max range and deals 2 damage
+
+(active) If on defensive strategy you can destroy a tile grid.
+
+(passive) If on defensive strategy, you can restore a tile grid at the beginning of the GM turn for free."$Mystery$6$$$$$$D$B (Tiles & stun)$B_E_04$$$
+Paradox (elite) B$$"Attack on max range and deals 2 damage
+
+Elite: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active) If on defensive strategy you can destroy a tile grid or stun a PC for 1 ROUND.
+
+(passive) If on defensive strategy, you restore a tile grid at the beginning of the GM turn for free."$Paradox$7$$$$$$D$B (Tiles & stun)$B_E_05$$$
+Boss B$$"Attack on max range and deals 2 damage
+
+Boss: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active)You can destroy a tile grid or stun a PC for 1 ROUND.
+
+(passive) If on aggresive strategy (Keys or PC), any effect on your tile is also inflicted in the same tile on the PC grid.
+
+(passive) If on defensive strategy, you restore a tile grid at the beginning of the GM turn for free."$Boss$8$$$$$$K$B (Tiles & stun)$B_E_06$$$
+Doubt C$$"Attack on +2 and deals 1 damage
+"$Doubt$4$$$$$$P$C (Leap & piercing)$C_E_01$$$
+Nonsense C$$"Attack on +3 and deals 1 damage
+
+leap : you deal damage directly to your target, even if there are elements ""in front of""
+
+(passive) Ignore shields when dealing damage."$Nonsense$4$$$$$$K$C (Leap & piercing)$C_E_02$$$
+Incoherence C$$"Attack on N/F and deals 2 damage
+
+(active) Deal 1 damage to all Seekers. 
+
+(passive) Ignore shields when dealing damage."$Incoherence$5$$$$$$P$C (Leap & piercing)$C_E_03$$$
+Mystery C$$"Attack on max range and deals 2 damage
+
+(passive) If on defensive strategy, your damage is reduced by 1. You deal damage to all Seekers. 
+
+(passive) If on aggressive strategy (P or K), you ignore Shields."$Mystery$6$$$$$$D$C (Leap & piercing)$C_E_04$$$
+Paradox (elite) C$$"Attack on max range and deals 2 damage
+
+Elite: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(passive) If on aggressive strategy (P or K), you deal damage to all Seekers. 
+"$Paradox$7$$$$$$Aggressif PC$C (Leap & piercing)$C_E_05$$$
+Boss C$$"Attack on max range and deals 2 damage
+
+Boss: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active) You deal 1 damage to all elements on allies grid.
+
+(passive) If on defensive strategy, when being attacked, you deal 1 damage to a Key.
+
+(passive) If on aggressive strategy (P or K), you deal damage to all Seekers."$Boss$8$$$$$$K$C (Leap & piercing)$C_E_06$$$
+Doubt D$$"Attack on +2 and deals 0 damage
+
+Passive : inflict Poison (1) each time it attacks (the target takes 1 damage at the end of the ROUND). "$Doubt$4$$$$$$P$D (Heal & poison)$D_E_01$$$
+Nonsense D$$"Attack on +3 and deals 1 damage
+
+leap : you deal damage directly to your target, even if there are elements ""in front of""
+
+(passive) If on defensive strategy at the beginning of the ROUND, you heal 1 health."$Nonsense$4$$$$$$K$D (Heal & poison)$D_E_02$$$
+Incoherence D$$"Attack on N/F and deals 2 damage
+
+(active) Inflict Poison (1) to all elements on C of the Seeker's side. Doesn't count as an offensive action. 
+
+(passive) If on defensive strategy at the beginning of the ROUND, you heal 1 health."$Incoherence$5$$$$$$P$D (Heal & poison)$D_E_03$$$
+Mystery D$$"Attack on max range and deals 2 damage and inflict Poison (1). 
+
+(passive) If on aggressive strategy, you inflict Poison (1) to all the PC. 
+
+(passive) If on defensive strategy, you heal 1 health. 
+"$Mystery$6$$$$$$D$D (Heal & poison)$D_E_04$$$
+Paradox (elite) D$$"Attack on max range and deals 2 damage
+
+Elite: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active) If on defensive strategy, you inflict Poison (1) to all the PC. Doesn't count as an offensive action.
+
+(passive) If on aggressive strategy, you inflict Poison (1) to all the PC. 
+
+(passive) If on defensive strategy at the beginning of the ROUND, you heal 1 health."$Paradox$7$$$$$$D$D (Heal & poison)$D_E_05$$$
+Boss D$$"Attack on max range and deals 2 damage
+
+Boss: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(passive) PC can't heal during the FIGHT.
+
+(passive) If on aggresive strategy (Keys or PC) at the beginning of the ROUND, you inflict Poison (1) to all the PC. 
+
+(passive) If on defensive strategy at the beginning of the ROUND, you heal 2 health."$Boss$8$$$$$$K$D (Heal & poison)$D_E_06$$$
+Doubt E$$"Attack on +2 and deals 1 damage
+
+Passive : Generate 1 Shield at the beginning of the ROUND. "$Doubt$4$$$$$$P$E (Shield & debuff)$E_E_01$$$
+Nonsense E$$"Attack on +3 and deals 1 damage
+
+leap : you deal damage directly to your target, even if there are elements ""in front of""
+
+(active) All shield on any element dissapears. "$Nonsense$4$$$$$$K$E (Shield & debuff)$E_E_02$$$
+Incoherence E$$"Attack on N/F and deals 2 damage
+
+(active) Generate 1 Shield
+
+(passive) If on aggresive strategy (Keys or PC) at the beginning of the ROUND, link two enemies. All negative effect and damage inflicted to one is inflicted to the other. "$Incoherence$6$$$$$$P$E (Shield & debuff)$E_E_03$$$
+Mystery E$$"At the beginning of the Fight, generate 10 Shield. 
+Attack on max range and deals 2. 
+
+(passive) Generate 1 Shield at the beginning of the ROUND. 
+"$Mystery$1$$$$$$D$E (Shield & debuff)$E_E_04$$$
+Paradox (elite) E$$"Attack on max range and deals 2 damage
+
+Elite: can make aggresive actions both at PC turn and GM turn ; all damage is reduced by 1
+
+(active) All shield on any element dissapears. 
+
+(passive) Generate 1 Shield at the beginning of the ROUND. 
+
+(passive) All Seekers are linked. Any effect, including damage, heal and Shields, is dealt to all of them. "$Paradox$5$$$$$$D$E (Shield & debuff)$E_E_05$$$
+Boss E$$Z$Boss$6$$$$$$K$E (Shield & debuff)$E_E_06$$$
+$$$$$$$$$$$E (Shield & debuff)$F_E_01$$$
+$$$$$$$$$$$F (Frost & Fire)$F_E_02$$$
+$$$$$$$$$$$F (Frost & Fire)$F_E_03$$$
+$$$$$$$$$$$F (Frost & Fire)$F_E_04$$$
+$$$$$$$$$$$F (Frost & Fire)$F_E_05$$$
+$$$$$$$$$$$F (Frost & Fire)$F_E_06$$$
+$$$$$$$$$$$G (Mobi & grab)$H_E_01$$$
+$$$$$$$$$$$G (Mobi & grab)$H_E_02$$$
+$$$$$$$$$$$G (Mobi & grab)$H_E_03$$$
+$$$$$$$$$$$G (Mobi & grab)$H_E_04$$$
+$$$$$$$$$$$G (Mobi & grab)$H_E_05$$$
+$$$$$$$$$$$G (Mobi & grab)$H_E_06$$$
+$$$$$$$$$$$H (Pioche)$H_E_01$$$
+$$$$$$$$$$$H (Pioche)$H_E_02$$$
+$$$$$$$$$$$H (Pioche)$H_E_03$$$
+$$$$$$$$$$$H (Pioche)$H_E_04$$$
+$$$$$$$$$$$H (Pioche)$H_E_05$$$
+$$$$$$$$$$$H (Pioche)$H_E_06$$$
+$$$$$$$$$$$H (Pioche)$H_E_07$$$
