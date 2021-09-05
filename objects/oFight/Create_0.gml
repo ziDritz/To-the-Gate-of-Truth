@@ -27,6 +27,8 @@ s_m
 	draw_text(display_get_gui_width() / 2, 0, s_m.get_current_state());
 	
 })
+	
+.event_set_default_function("Draw", function() {})
 
 .add("Init", {
 	enter: function () {
@@ -401,19 +403,52 @@ s_m
 		
 .add("Round", {
 	enter: function () {
-		performing_side					= "Players";
-		is_unit_performing_selected		= false;
-		unit_riposting					= noone;
+		performing_side			= "Players";
+		unit_performing			= noone;
+		unit_riposting			= noone;
+		option_targeted			= 0;
 		
 		Select_Unit_Performing			= function() {
 			if	Clicking_On_Unit()
-			&&	(is_unit_performing_selected == false)
+			&&	(unit_performing == noone)
 			&&	(tile_mouse.unit.side == performing_side) {
-				with (tile_mouse.unit)			s_m.change("Choosing Action");
-				is_unit_performing_selected		= true;
-				DM("Unit "+ S(tile_mouse.unit.name)+ " is choosing an action");
+				if (performing_side == "Players")	s_m.change("Players Choosing Action");
+				if (performing_side == "GM")		s_m.change("GM Choosing Action");
+				unit_performing		=	tile_mouse.unit;
+				DM("Unit "+ S(unit_performing.name)+ " is choosing an action");
+				
 			}
 		}
+		
+		// TODO : move code to a cleaner place
+		Choosing_Action = function() {
+		
+			if (keyboard_check_pressed(vk_escape))	{
+				s_m.change(get_previous_state()); 
+				exit;
+			}
+			
+			#region		Selection option
+			
+			if (keyboard_check_pressed(vk_up))					option_targeted--;
+			if (keyboard_check_pressed(vk_down))				option_targeted++;
+			
+			if (option_targeted >= array_length(unit_performing.fight_menu))		option_targeted = 0;
+			if (option_targeted < 0)							option_targeted = array_length(unit_performing.fight_menu)-1;
+			
+			
+			//if (keyboard_check_pressed(vk_enter)) && (unit_performing.action_count > 0) {
+					
+				
+			//		option_selected = unit_performing.fight_menu[option_targeted].action;
+			//		unit_performing.doAction(option_selected);
+			//		DM(S(unit_performing.name) +" wants to "+ fightMenu[# FIGHTMENU_COLUMNS.NAME, option_targeted]);
+			//}
+			
+			#endregion
+			
+		}
+		
 	},
 	
 	step: function() {
@@ -422,7 +457,52 @@ s_m
 })
 
 	.add_child("Round", "Players' Turn")
+		.add_child("Players' Turn", "Players Choosing Action", {
+			step : function(){
+				Choosing_Action();
+			},
+			Draw: function() {
+			DM("Draw Action Menu");
+			#region		Draw fightMenu
+
+			var u_x = unit_performing.x; 
+			var u_y = unit_performing.y;
+			var y_offset = 16;
+			var x_offset = 16;
+			var x_offset_fromChar = 90;
+			var x_offset_fromItems = 25;
+			var array_height = array_length(unit_performing.fight_menu);
+			var start_x = u_x - x_offset_fromChar;
+			//fonction de ouf pour déterminer la position du premier item du menu
+			var start_y = u_y - (((array_height-1)/2) * y_offset);  
+			
+			//Draw items
+			draw_set_halign(fa_left);
+			draw_set_valign(fa_middle);
+			var c = c_black;
+			
+			for (var yy = 0; yy < array_height; yy++) {
+				var txt_x = start_x;
+				var txt_y = start_y + (yy*y_offset);
+				c = c_black;
+				
+					
+				//item sélectionné
+				if (yy == option_targeted) {
+					c = c_orange;
+					txt_x = start_x - x_offset_fromItems;
+				}
+					
+				draw_set_color(c);
+				draw_text(txt_x, txt_y, unit_performing.fight_menu[yy].displayed_text);
+			}
+			
+			#endregion	
+			
+			}
+		})
 	.add_child("Round", "GM's Turn")
+		.add_child("GM's Turn", "GM Choosing action")
 	.add_child("Round", "Consequences")
 	
 .add("Check end condition")

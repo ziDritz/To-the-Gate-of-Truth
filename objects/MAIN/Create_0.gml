@@ -271,7 +271,16 @@ Seeker = function () constructor {
 	x					= argument[i++];
 	y					= argument[i++];
 	
-
+	fight_menu = [{
+		displayed_text : "Move",
+		action : "MOVE"
+	},
+	{
+		displayed_text : "Attack",
+		action: "ATTACK"
+	}];
+		
+	doAction			= function(action){DM("coucou les actions"); DM(action);}
 	Display_Stats		= function() {
 	
 		draw_set_halign(fa_left);
@@ -432,11 +441,19 @@ Enemy = function () constructor {
 		.event_set_default_function("Draw_Self", function() { 
 			draw_sprite(sprite_index, image_index, x, y)
 		})
-		.add("Idle")
+		.add("Idle", {
+			enter: function () {
+				DM("Entering Idle");
+			}
+		})
 		.add("Choosing Action", {
 			enter: function () {
-				
-				}
+			
+				},
+			
+			Draw_Menu: function () {
+				DM("Displaying action to choose from");	
+			}
 		})
 		.add("Preparing Action")
 		.add("Doing Action"); 

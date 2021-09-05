@@ -10,6 +10,10 @@ for (var xx = 0; xx < columns;	xx++) {
 if (variable_instance_exists(id, "units_on_board")) {
 	for (var i = 0; i < array_length(units_on_board); i++) {
 		var u = units_on_board[i];	
-		with (u)	s_m.Draw_Self();
+		with (u)	{ 
+				s_m.Draw_Self();				
+		}
 	}
 }
+
+s_m.Draw();
